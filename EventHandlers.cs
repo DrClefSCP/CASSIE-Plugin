@@ -7,8 +7,9 @@ namespace Test1
     {
         public void OnRoundStarted()
         {
-            Timing.CallDelayed(900, () => Cassie.MessageTranslated("The Warhead will be activated in T-Minus 5 Minutes", "La nuke automatica sera activada en 5 minuto"));
-            Timing.CallDelayed(1140, () => Cassie.MessageTranslated("The Warhead will be activated in T-Minus 1 Minute", "La nuke automatica sera activada en 1 minuto"));
+            Timing.CallDelayed(delay, () => Cassie.MessageTranslated("What the CASSIE will say", "What the CASSIE will write down"));
         }
     }
 }
+
+//Change the delay measured in seconds so the CASSIE appears when you want it to (example: 15 mins = 900 secs).
