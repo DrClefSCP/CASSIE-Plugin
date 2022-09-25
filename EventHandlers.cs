@@ -1,4 +1,4 @@
-﻿using Exiled.API.Features;
+using Exiled.API.Features;
 using MEC;
 
 namespace Test1
@@ -7,9 +7,8 @@ namespace Test1
     {
         public void OnRoundStarted()
         {
-            Timing.CallDelayed(delay, () => Cassie.MessageTranslated("What the CASSIE will say", "What the CASSIE will write down"));
+            Timing.CallDelayed(Plugin.Instance.Config.Delay1, () => Cassie.MessageTranslated(Plugin.Instance.Config.CassieMessage1, Plugin.Instance.Config.CassieMessageTranslated1));
+            Timing.CallDelayed(Plugin.Instance.Config.Delay2, () => Cassie.MessageTranslated(Plugin.Instance.Config.CassieMessage2, Plugin.Instance.Config.CassieMessageTranslated2));
         }
     }
 }
-
-//Change the delay measured in seconds so the CASSIE appears when you want it to (example: 15 mins = 900 secs).
