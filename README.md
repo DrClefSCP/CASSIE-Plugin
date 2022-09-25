@@ -1,7 +1,7 @@
 # Plugin CASSIE
-Plugin which makes you can send a CASSIE broadcast in a certain moment of the round
+Plugin que envia un mensaje de alerta de nuke automatica
 
-You need to add these references:
+Referencias a usar:
 - Exiled.API.dll, 
 - Assembly-CSharp.dll, 
 - Exiled.Events.dll, 
