@@ -1,7 +1,7 @@
 # Plugin CASSIE
-Plugin que hace que se pueda enviar un mensaje con el C.A.S.S.I.E en cierto momento de la partida.
+Plugin which makes you can send a CASSIE broadcast in a certain moment of the round
 
-Se debe añadir las referencias de 
+You need to add these references:
 - Exiled.API.dll, 
 - Assembly-CSharp.dll, 
 - Exiled.Events.dll, 
