@@ -23,8 +23,7 @@ namespace Test1
         public string CassieMessageTranslated2 { get; set; } = "La nuke sera activada en 1 minuto";
 
         [Description("El delay que tiene el segundo mensaje de el C.A.S.S.I.E (19 mins por defecto)")]
-        public float Delay2 { get; set; } = 1140f;
+        public float Delay2 { get; set; } = 1440f;
 
     }
 }
-
