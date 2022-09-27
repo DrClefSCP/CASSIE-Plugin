@@ -14,10 +14,12 @@ namespace Test1
             Instance = this;
             handler = new EventHandlers();
             Exiled.Events.Handlers.Server.RoundStarted += handler.OnRoundStarted;
+            Exiled.Events.Handlers.Server.RoundEnded += handler.RoundEndedEvent;
         }
         public override void OnDisabled()
         {
             Exiled.Events.Handlers.Server.RoundStarted -= handler.OnRoundStarted;
+            Exiled.Events.Handlers.Server.RoundEnded -= handler.RoundEndedEvent;
             handler = null;
             Instance = null;
         }
